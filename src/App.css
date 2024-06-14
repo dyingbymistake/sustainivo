@@ -5,6 +5,30 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+.quiz, .report {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.quiz h2, .report h2 {
+  color: #333;
+}
+
+.quiz form, .report ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz input, .quiz button, .report li {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
 .home,
 .services,
 .products,
@@ -17,7 +41,7 @@
 }
 
 .services {
-  background-image: url('C:\Users\hp\sustaindemo\public\images\img-2.jpg');
+  background-image: url('/workspaces/sustainivo/public/images/img-16.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,16 +50,17 @@
 }
 
 .products {
-  background-image: url('C:\Users\hp\sustaindemo\public\images\img-1.jpg');
+  background-image: url('/workspaces/sustainivo/public/images/img-23.jpg');
   background-position: center;
-  background-size: fill;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  
 }
 
 .sign-up {
-  background-image: url('C:\Users\hp\sustaindemo\public\images\img-8.jpg');
+  background-image: url('/workspaces/sustainivo/public/images/img-8.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

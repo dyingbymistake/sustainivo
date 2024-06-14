@@ -22,7 +22,12 @@ function Navbar() {
     showButton();
   }, []);
 
-  window.addEventListener('resize', showButton);
+  useEffect(() => {
+    window.addEventListener('resize', showButton);
+    return () => {
+      window.removeEventListener('resize', showButton);
+    };
+  }, []);
 
   return (
     <>
@@ -30,7 +35,7 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             SLH
-            <i class='fab fa-typo3' />
+            <i className='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -42,35 +47,33 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                 Services
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                 Products
               </Link>
             </li>
-
+            <li className='nav-item'>
+              <Link to='/quiz' className='nav-links' onClick={closeMobileMenu}>
+                Quiz
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/contribution' className='nav-links' onClick={closeMobileMenu}>
+                Contribute
+              </Link>
+            </li>
+            
             <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
                 Sign Up
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+         
         </div>
       </nav>
     </>

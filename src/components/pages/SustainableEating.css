@@ -1,0 +1,35 @@
+/* src/components/pages/SustainableEating.css */
+.sustainable-eating {
+    padding: 20px;
+    color: #2d2d2d;
+    background-color: #eef5e1;
+    border-radius: 8px;
+  }
+  
+  .sustainable-eating h1 {
+    color: #3b8c3b;
+  }
+  
+  .sustainable-eating h2 {
+    color: #2d6a2d;
+  }
+  
+  .sustainable-eating ul {
+    list-style-type: circle;
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  .sustainable-eating ul li {
+    margin: 5px 0;
+  }
+  
+  .sustainable-eating a {
+    color: #3b8c3b;
+    text-decoration: none;
+  }
+  
+  .sustainable-eating a:hover {
+    text-decoration: underline;
+  }
+  

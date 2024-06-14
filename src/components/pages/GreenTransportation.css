@@ -1,0 +1,42 @@
+/* src/components/pages/GreenTransportation.css */
+
+.green-transportation {
+    padding: 20px;
+    color: #333; /* Darker text color */
+    background-color: #f3f7f4; /* Light green background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  .green-transportation h1 {
+    color: #2b8c5b; /* Green header color */
+    margin-bottom: 20px; /* Spacing below the header */
+  }
+  
+  .green-transportation h2 {
+    color: #1a6d43; /* Dark green subheader color */
+    margin-bottom: 10px; /* Spacing below subheaders */
+  }
+  
+  .green-transportation p {
+    margin-bottom: 15px; /* Spacing below paragraphs */
+  }
+  
+  .green-transportation ul {
+    list-style-type: none; /* Remove default list styles */
+    padding-left: 0; /* Remove left padding from lists */
+  }
+  
+  .green-transportation ul li {
+    margin-bottom: 10px; /* Spacing between list items */
+  }
+  
+  .green-transportation a {
+    color: #2b8c5b; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .green-transportation a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

@@ -1,0 +1,50 @@
+/* src/components/pages/HomeEnergy.css */
+
+.home-energy {
+  padding: 20px;
+  color: #333; /* Dark text color */
+  background-color: #f5f8f6; /* Light green background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.home-energy h1 {
+  color: #2e7d32; /* Dark green header */
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.home-energy p {
+  margin-bottom: 20px; /* Space below paragraphs */
+  line-height: 1.6; /* Adjusted line height for better readability */
+}
+
+.home-energy h2 {
+  color: #4caf50; /* Light green subheading */
+  font-size: 1.8rem; /* Slightly smaller font size */
+  margin-top: 20px; /* Space above subheading */
+  margin-bottom: 10px; /* Space below subheading */
+}
+
+.home-energy ul {
+  list-style-type: none; /* No bullet points */
+  padding-left: 0; /* Remove default padding */
+  margin-bottom: 20px; /* Space below lists */
+}
+
+.home-energy ul li {
+  margin-bottom: 12px; /* Increased space between list items */
+  font-size: 1.1rem; /* Font size for list items */
+  line-height: 1.6; /* Adjusted line height for better readability */
+}
+
+.home-energy a {
+  color: #4caf50; /* Light green links */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.home-energy a:hover {
+  color: #2e7d32; /* Dark green on hover */
+  text-decoration: underline; /* Underline on hover */
+}
