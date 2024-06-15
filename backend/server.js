@@ -13,7 +13,7 @@ app.use(cors({
 }));
 
 // MongoDB connection string
-const mongoURI = 'mongodb+srv://2906saiL:2906saiL@cluster0.xtv46x6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'; // Update with your MongoDB URI
+const mongoURI = 'mongodb+srv://2906saiL:2906saiL@cluster0.xtv46x6.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0'; // Update with your MongoDB URI
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
@@ -36,7 +36,9 @@ app.get('/', (req, res) => {
 
 // Endpoint to submit quiz results
 app.post('/api/quiz', async (req, res) => {
-    const { recycle, waterUsage, energyConsumption } = req.body;
+    const recycle = parseInt(req.body.recycleFrequency);
+	const waterUsage = parseInt(req.body.waterUsage);
+    const energyConsumption = parseInt(req.body.energyConsumption);
     const report = generateReport(recycle, waterUsage, energyConsumption);
     const newResult = new QuizResult({ recycle, waterUsage, energyConsumption, report });
 
@@ -44,6 +46,7 @@ app.post('/api/quiz', async (req, res) => {
         await newResult.save();
         res.json({ report });
     } catch (err) {
+		console.log(err)
         res.status(500).json({ error: 'Failed to save quiz result' });
     }
 });
