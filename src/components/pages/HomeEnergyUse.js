@@ -1,6 +1,6 @@
 // src/components/pages/HomeEnergy.js
 import React from 'react';
-import '/src/components/pages/HomeEnergyUse.css'; // Import the corresponding CSS file
+import ''/workspaces/sustainivo/src/components/pages/HomeEnergyUse.css'; // Import the corresponding CSS file
 
 function HomeEnergy() {
   return (
