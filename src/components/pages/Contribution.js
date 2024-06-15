@@ -29,25 +29,23 @@ const Contribution = () => {
     <div className="contribution-form-container">
       <h1>Contribute to Our Community</h1>
       <form onSubmit={handleSubmit}>
-        <label>
-          Title:
-          <input
-            type="text"
-            name="title"
-            value={formData.title}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <label>
-          Description:
-          <textarea
-            name="description"
-            value={formData.description}
-            onChange={handleChange}
-            required
-          />
-        </label>
+        <label htmlFor="title">Title:</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          value={formData.title}
+          onChange={handleChange}
+          required
+        />
+        <label htmlFor="description">Description:</label>
+        <textarea
+          id="description"
+          name="description"
+          value={formData.description}
+          onChange={handleChange}
+          required
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
