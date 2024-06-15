@@ -22,7 +22,7 @@ const Quiz = ({ setReport }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('%REACT_APP_BACKEND%/api/quiz', answers);
+   const response = await axios.post('13.232.185.84:5000/api/quiz', answers);
       setReport(response.data); // Set report state in parent component to display report
     } catch (error) {
       console.error('Error submitting the quiz!', error);
