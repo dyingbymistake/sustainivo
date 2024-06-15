@@ -8,7 +8,7 @@ const app = express();
 // Middleware setup
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'http://localhost:3000', // Update to your frontend URL
+    origin: 'https://sustain-f8ec0efb9bc1.herokuapp.com/', // Update to your frontend URL
     credentials: true
 }));
 
