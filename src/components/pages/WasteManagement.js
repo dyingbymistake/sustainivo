@@ -1,6 +1,6 @@
 // src/components/pages/WasteManagement.js
 import React from 'react';
-import '/workspaces/sustainivo/src/components/pages/WasteManagement.css';
+import './WasteManagement.css';
 
 function WasteManagement() {
   return (
